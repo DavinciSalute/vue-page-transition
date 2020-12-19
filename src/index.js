@@ -1,3 +1,6 @@
+import 'core-js/stable'
+import 'regenerator-runtime/runtime.js'
+
 import VuePageTransition from './components/VuePageTransition.vue'
 
 // Install the components
@@ -12,9 +15,8 @@ export {
 
 // Plugin
 const plugin = {
-  /* eslint-disable no-undef */
   version: VERSION,
-  install,
+  install: install,
 }
 
 export default plugin
